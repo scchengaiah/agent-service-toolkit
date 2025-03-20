@@ -5,7 +5,7 @@ import requests
 
 
 def wait_for_backend(
-    timeout: int = 30, url: str = "http://localhost:8080/health"
+    timeout: int = 60, url: str = "http://localhost:8080/health"
 ) -> None:
     try:
         print("Waiting for backend to start...")
